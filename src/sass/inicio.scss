@@ -1,6 +1,7 @@
 @use'header';
 .contIni{
     margin-bottom: 100px;
+    animation: aparecer 1s forwards;
     &__name{
         margin: 0;
         text-align: left;
@@ -47,5 +48,15 @@
                 color:header.$colorPrincipal ;
             }
         }
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }100%{
+        opacity: 1;
+        visibility: visible;
     }
 }

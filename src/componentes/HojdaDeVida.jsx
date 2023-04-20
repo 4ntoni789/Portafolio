@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import '../css/hojaDeVida.css';
 
 function HojdaDeVida(props) {
 	const myRef = useRef();

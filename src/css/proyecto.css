@@ -18,6 +18,27 @@
   right: 5px;
   color: #f57600;
 }
+.contHeader__cod {
+  color: #f57600;
+  font-size: 13px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: left;
+  bottom: 0px;
+}
+.contHeader__cod:hover {
+  text-decoration: underline;
+  color: #f57600;
+}
+.contHeader__spam {
+  color: #777;
+  font-weight: 550;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  text-align: left;
+}
 
 .contProyectos__proy {
   width: 250px;

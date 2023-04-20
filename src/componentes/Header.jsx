@@ -11,6 +11,8 @@ function Header(props) {
     <div className='contHeader' onMouseOver={() => setActiveHeader(true)} onMouseOut={() => setActiveHeader(false)}>
       <Navegacion />
       <FontAwesomeIcon className='contHeader__bntShow' icon={activeHeader ? faArrowLeft : faArrowRight} />
+      <a className='contHeader__cod' href="https://github.com/4ntoni789/Portafolio.git">Revisar esté mismo codigo</a>
+      <p className='contHeader__spam'>Diseñado y desarrollador por Antoni parra</p>
     </div>
   );
 }

@@ -35,7 +35,7 @@ function Tabla(props) {
             <td><b>Codigo en GitHub</b></td>
           </tr>
           <tr>
-            <td>{props.codigo}</td>
+            <td><a href={props.codigo}>{props.codigo}</a></td>
           </tr>
         </tbody>
       </table>
