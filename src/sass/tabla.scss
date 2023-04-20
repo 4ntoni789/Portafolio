@@ -1,0 +1,23 @@
+@use'header';
+
+.contTable {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    table {
+        border: 1px solid header.$colorPrincipal;
+        
+        td {
+            border: 1px solid header.$colorPrincipal;
+            font-size: 15px;
+        }
+    }
+}

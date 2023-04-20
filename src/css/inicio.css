@@ -1,0 +1,73 @@
+.contHeader {
+  width: 140px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -100px;
+  transition: all 0.5s;
+  border-right: 1px solid #f57600;
+  z-index: 50;
+}
+.contHeader:hover {
+  left: 0;
+}
+.contHeader__bntShow {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #f57600;
+}
+
+.contIni {
+  margin-bottom: 100px;
+}
+.contIni__name {
+  margin: 0;
+  text-align: left;
+}
+.contIni__dev {
+  color: #777;
+  font-size: 40px;
+  text-align: left;
+  margin: 0;
+}
+.contIni__dev::before {
+  content: "<";
+  color: #f57600;
+}
+.contIni__dev::after {
+  content: "/>";
+  color: #f57600;
+}
+.contIni__btnMe {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+.contIni__btnMe__btn1 {
+  background-color: #777;
+  margin-right: 20px;
+  width: 20%;
+  height: 25px;
+  border-radius: 2px;
+  color: #222;
+  transition: color 0.5s;
+}
+.contIni__btnMe__btn1:hover {
+  color: #f57600;
+}
+.contIni__btnMe__btn {
+  margin-right: 20px;
+  width: 20%;
+  height: 25px;
+  border: 2px solid #777;
+  border-radius: 2px;
+  color: #777;
+  transition: color 0.5s;
+}
+.contIni__btnMe__btn:hover {
+  color: #f57600;
+}
+
+/*# sourceMappingURL=inicio.css.map */

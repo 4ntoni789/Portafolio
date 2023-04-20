@@ -1,0 +1,67 @@
+.contHeader {
+  width: 140px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -100px;
+  transition: all 0.5s;
+  border-right: 1px solid #f57600;
+  z-index: 50;
+}
+.contHeader:hover {
+  left: 0;
+}
+.contHeader__bntShow {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #f57600;
+}
+
+.contMaquina__span {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  color: #f57600;
+  font-size: 30px;
+  width: 12ch;
+  animation: typing 1.5s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+.contMaquina__null {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  color: #f57600;
+  font-size: 30px;
+  width: 12ch;
+  overflow: hidden;
+  transition: all 0.5s;
+  animation: desaparecer 0.5s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes desaparecer {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=maquinaEscribirEfect.css.map */

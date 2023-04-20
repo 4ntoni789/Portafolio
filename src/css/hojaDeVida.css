@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    background-color: #ccc;
+}
+.app{
+    margin: 50px 250px 50px 250px;
+    background-color: #fff;
+    border:2px double #000 ;
+    border-radius: 10px;
+    padding:100px 0 100px 0 ;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+}
+.encabezado > h3{
+    flex-grow: 1;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.contImg{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 100px !important;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.app >h4{
+    margin:0 0 50px 120px ;
+    color: #333;
+}
+.app > h4:nth-child(4){
+    margin-top: 30px;
+}
+.datosPersonales,.contEstudios{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 170px;
+}
+.datosPersonales > label{
+    font-weight: bold;
+    align-self: flex-start;
+    margin-right: 300px;
+}
+.datosPersonales > p{
+    position: relative;
+    bottom: 17px;
+    left: 90px;
+    display: inline-block;
+    text-align: right;
+}
+.n2{
+    margin-right:100px ;
+}
+.n3{
+    margin-right: 130px;
+}
+.n4{
+    margin-right: 155px;
+}
+.n5{
+    margin-left: 50px;
+}
+.n6{
+    margin-right: 120px;
+}
+.contEstudios >label{
+    font-weight: bold;
+    align-self: flex-start;
+    margin-right: 300px;
+}
+.contEstudios > p{
+    position: relative;
+    bottom: 17px;
+    left: 110px;
+    display: inline-block;
+    text-align: right;
+}
+.contEstudios2 > p{
+    position: relative;
+    bottom: 17px;
+    left: 170px;
+    display: inline-block;
+    text-align: right;
+}
+.app > h4:nth-child(6){
+    margin-top: 50px;
+}
