@@ -6,7 +6,7 @@ function Navegacion(props) {
   return (
     <div className='contNavegacion'>
       <NavLink className={({ isActive }) => (isActive ? 'contNavegacion__navActive' : 'contNavegacion__nav')}
-        to="/">Inicio</NavLink>
+        to="/index.html">Inicio</NavLink>
       <NavLink className={({ isActive }) => (isActive ? 'contNavegacion__navActive' : 'contNavegacion__nav')}
         to="proyectos">Proyectos</NavLink>
       <NavLink className={({ isActive }) => (isActive ? 'contNavegacion__navActive' : 'contNavegacion__nav')}

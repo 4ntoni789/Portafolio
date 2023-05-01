@@ -3,9 +3,11 @@ import '../css/modalProyect.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tabla from './Tabla.jsx';
+import MostrarImg from './MostrarImg';
 
 function ModalProyect(props) {
   const miRef = useRef();
+  const [activarMostrarImg, setActivarMostrarImg] = useState(false);
   const changeImg = (e) => {
     miRef.current.src = e.target.src;
   }
@@ -23,7 +25,7 @@ function ModalProyect(props) {
     <div className={props.activeModal ? 'contProyectos__proy__contModalProyect__active' : 'contProyectos__proy__contModalProyect'}>
       <div className='contProyectos__proy__contModalProyect__active__info'>
         <div className='contProyectos__proy__contModalProyect__active__info__contImg'>
-          <img ref={miRef} src={props.datos.img[0]} alt="" />
+          <img ref={miRef} src={props.datos.img[0]} onClick={() => setActivarMostrarImg(true)} />
           <div className='contProyectos__proy__contModalProyect__active__info__contImg__subImgs'>
             {
               props.datos.img.map((m, i) => {
@@ -50,11 +52,15 @@ function ModalProyect(props) {
         </div>
       </div>
       <div className='contProyectos__proy__contModalProyect__active__contBtnXmark' onClick={() => {
-        props.Close();
+        if(activarMostrarImg == false){
+          props.Close();
+        }else setActivarMostrarImg(false);
+        
       }
       }>
         <FontAwesomeIcon icon={faXmark} />
       </div>
+      <MostrarImg activarModalImg={activarMostrarImg} img={props.datos.img} />
     </div>
   );
 }

@@ -80,6 +80,7 @@
 }
 .contProyectos__proy__contModalProyect__active__info__contImg img {
   width: 98%;
+  cursor: pointer;
 }
 .contProyectos__proy__contModalProyect__active__info__contImg__subImgs {
   width: 100%;

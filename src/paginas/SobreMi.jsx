@@ -3,7 +3,7 @@ import HojdaDeVida from '../componentes/HojdaDeVida';
 
 function SobreMi(props) {
   return (
-    <div className='contSobre mi'>
+    <div className='contSobreMi'>
       <HojdaDeVida/>
     </div>
   );

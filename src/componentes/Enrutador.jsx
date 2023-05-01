@@ -8,7 +8,7 @@ function Enrutador(props) {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Inicio />} />
+        <Route index path='index.html' element={<Inicio />} />
         <Route path='proyectos' element={<Proyectos/>} />
         <Route path='me' element={<SobreMi/>} />
       </Routes>
